@@ -75,7 +75,7 @@ public void update_profile_picture() throws Throwable
 @When("^Enter your personal details and save$")
 public void enter_your_personal_details_and_save() throws Throwable 
 {
-	driver.findElement(By.name("user_location")).sendKeys("sekarreddy");
+	driver.findElement(By.name("user_location")).sendKeys("banglore");
     driver.findElement(By.name("user_facebook")).sendKeys("sekarReddy");
     driver.findElement(By.name("user_twitter")).sendKeys("sekar@sekarcReddy");
     driver.findElement(By.name("user_email")).sendKeys("sekarcreddy@gmail.com");

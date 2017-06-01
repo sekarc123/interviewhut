@@ -56,8 +56,13 @@ public class Answer
         {
             String a=s.getCell(0, i).getContents();
             Thread.sleep(5000);
-            driver.findElement(By.id("")).sendKeys(a);
-            driver.findElement(By.xpath("(//*[@id='submit_reply'])[2]")).click();	
+            driver.findElement(By.id("tinymce")).sendKeys(a);
+            driver.switchTo().defaultContent();
+            Thread.sleep(2000);
+            driver.findElement(By.xpath("(//*[@id='submit_reply'])[2]")).click();
+            w.close();
+            wb.close();
+            Thread.sleep(5000);
         }
 		
 	}

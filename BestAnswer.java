@@ -34,6 +34,7 @@ public void mark_as_best_answer() throws Throwable
 	   driver.findElement(By.xpath("(//*[text()='what is data'])[3]")).click();
        Thread.sleep(50000);
        driver.findElement(By.xpath("//*[@id='answers_main_list']/descendant::a[3]")).click();
+       Thread.sleep(5000);
 }
 
 @Then("^Log out$")

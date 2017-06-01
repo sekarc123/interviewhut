@@ -75,7 +75,7 @@ public class Askquestion
 		//Alert for captcha
 		JavascriptExecutor js= (JavascriptExecutor) driver;
 		js.executeScript("alert('Manually select captcha within a MINUTE');");
-		Thread.sleep(90000);
+		Thread.sleep(100000);
 
 		driver.findElement(By.id("btn_submit_question")).click();
 		Thread.sleep(5000);
